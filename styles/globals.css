@@ -1,0 +1,148 @@
+html,
+body,
+#__next {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #f5f7fa;
+}
+
+.admin-layout {
+  min-height: 100vh;
+}
+
+.admin-sider {
+  border-right: 1px solid #f0f0f0;
+}
+
+.brand-mark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 64px;
+  padding: 0 22px;
+  color: #1d2939;
+  font-size: 16px;
+  font-weight: 650;
+}
+
+.admin-header {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.admin-content {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 28px;
+}
+
+.page-stack,
+.full-width {
+  width: 100%;
+}
+
+.page-heading,
+.card-title-row,
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.page-heading .ant-typography {
+  margin-bottom: 4px;
+}
+
+.application-card {
+  height: 100%;
+}
+
+.application-card .ant-card-body {
+  height: 100%;
+}
+
+.card-title-row .ant-typography h4,
+.card-title-row h4 {
+  margin: 0 0 4px;
+}
+
+.card-footer {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 12px;
+}
+
+.settings-form,
+.user-create-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 16px;
+}
+
+.settings-submit,
+.user-submit {
+  grid-column: 1 / -1;
+}
+
+.login-page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #f4f7ff, #f8fafc 55%, #eef4ff);
+}
+
+.login-card {
+  width: min(100%, 440px);
+  box-shadow: 0 16px 48px #102b4c12;
+}
+
+.login-card .ant-card-body {
+  padding: 36px;
+}
+
+.login-icon {
+  margin-bottom: 14px;
+  color: #2563eb;
+  font-size: 28px;
+}
+
+@media (max-width: 767px) {
+  .admin-header {
+    padding: 0 14px;
+  }
+
+  .admin-content {
+    padding: 20px 14px;
+  }
+
+  .page-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .settings-form,
+  .user-create-form {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-submit,
+  .user-submit {
+    grid-column: auto;
+  }
+
+  .login-card .ant-card-body {
+    padding: 24px;
+  }
+}
